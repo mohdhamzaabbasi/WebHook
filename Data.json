@@ -1,0 +1,253 @@
+Encrypted Timestamp: 6149997231471
+Decrypted Timestamp: 1741327999416
+Current Time: 1741327998788
+Authorization verified!
+Received Checksum: 2cbe1eecb1c6e6842fcac89b5c65bdf88827aa7fa7e3502ab5ffec3a76c24057
+Computed Checksum: 2cbe1eecb1c6e6842fcac89b5c65bdf88827aa7fa7e3502ab5ffec3a76c24057
+Data integrity verified!
+Data Validated.
+############################################################################################
+{
+  _class: 'org.jenkinsci.plugins.workflow.job.WorkflowRun',
+  actions: [
+    { _class: 'hudson.model.CauseAction', causes: [Array] },
+    {
+      _class: 'jenkins.metrics.impl.TimeInQueueAction',
+      blockedDurationMillis: 0,
+      blockedTimeMillis: 0,
+      buildableDurationMillis: 0,
+      buildableTimeMillis: 11,
+      buildingDurationMillis: 9498,
+      executingTimeMillis: 8843,
+      executorUtilization: 0.93,
+      subTaskCount: 1,
+      waitingDurationMillis: 0,
+      waitingTimeMillis: 0
+    },
+    { _class: 'org.jenkinsci.plugins.workflow.libs.LibrariesAction' },
+    {},
+    {
+      _class: 'hudson.plugins.git.util.BuildData',
+      buildsByBranchName: [Object],
+      lastBuiltRevision: [Object],
+      remoteUrls: [Array],
+      scmName: ''
+    },
+    {},
+    { _class: 'org.jenkinsci.plugins.workflow.cps.EnvActionImpl' },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      _class: 'org.jenkinsci.plugins.displayurlapi.actions.RunDisplayAction'
+    },
+    {
+      _class: 'org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction'
+    },
+    {},
+    {
+      _class: 'org.jenkinsci.plugins.workflow.job.views.FlowGraphAction'
+    },
+    {},
+    {}
+  ],
+  artifacts: [],
+  building: false,
+  description: null,
+  displayName: '#16',
+  duration: 9498,
+  estimatedDuration: 32693,
+  executor: null,
+  fullDisplayName: 'Portfolio #16',
+  id: '16',
+  keepLog: false,
+  number: 16,
+  queueId: 13,
+  result: 'FAILURE',
+  timestamp: 1740461489388,
+  url: 'http://3.111.41.177:8080/job/Portfolio/16/',
+  changeSets: [],
+  culprits: [],
+  inProgress: false,
+  nextBuild: { number: 17, url: 'http://3.111.41.177:8080/job/Portfolio/17/' },
+  previousBuild: { number: 15, url: 'http://3.111.41.177:8080/job/Portfolio/15/' }
+}
+############################################################################################
+{
+  _links: { self: { href: '/job/Portfolio/16/wfapi/describe' } },
+  id: '16',
+  name: '#16',
+  status: 'FAILED',
+  startTimeMillis: 1740461489399,
+  endTimeMillis: 1740461498897,
+  durationMillis: 9498,
+  queueDurationMillis: 11,
+  pauseDurationMillis: 0,
+  stages: [
+    {
+      _links: [Object],
+      id: '6',
+      name: 'Checkout',
+      execNode: '',
+      status: 'SUCCESS',
+      startTimeMillis: 1740461490009,
+      durationMillis: 1156,
+      pauseDurationMillis: 0
+    },
+    {
+      _links: [Object],
+      id: '11',
+      name: 'Build Docker Image',
+      execNode: '',
+      status: 'SUCCESS',
+      startTimeMillis: 1740461491215,
+      durationMillis: 2562,
+      pauseDurationMillis: 0
+    },
+    {
+      _links: [Object],
+      id: '17',
+      name: 'Run Container',
+      execNode: '',
+      status: 'SUCCESS',
+      startTimeMillis: 1740461493823,
+      durationMillis: 3499,
+      pauseDurationMillis: 0
+    },
+    {
+      _links: [Object],
+      id: '25',
+      name: 'Print Environment Variables',
+      execNode: '',
+      status: 'SUCCESS',
+      startTimeMillis: 1740461497367,
+      durationMillis: 478,
+      pauseDurationMillis: 0
+    },
+    {
+      _links: [Object],
+      id: '34',
+      name: 'Declarative: Post Actions',
+      execNode: '',
+      status: 'SUCCESS',
+      startTimeMillis: 1740461497887,
+      durationMillis: 828,
+      pauseDurationMillis: 0
+    }
+  ]
+}
+
+changeSets: [
+    {
+        "_class": "hudson.plugins.git.GitChangeSetList",
+        "items": [
+            {
+                "_class": "hudson.plugins.git.GitChangeSet",
+                "affectedPaths": [
+                    "Jenkinsfile"
+                ],
+                "commitId": "1c23ac141fece25c380a1f8c7b8851659d94706f",
+                "timestamp": 1741282596000,
+                "author": {
+                    "absoluteUrl": "http://localhost:8080/user/noreply",
+                    "fullName": "noreply"
+                },
+                "authorEmail": "noreply@github.com",
+                "comment": "Update Jenkinsfile\n",
+                "date": "2025-03-06 23:06:36 +0530",
+                "id": "1c23ac141fece25c380a1f8c7b8851659d94706f",
+                "msg": "Update Jenkinsfile",
+                "paths": [
+                    {
+                        "editType": "edit",
+                        "file": "Jenkinsfile"
+                    }
+                ]
+            },
+            {
+                "_class": "hudson.plugins.git.GitChangeSet",
+                "affectedPaths": [
+                    "Jenkinsfile"
+                ],
+                "commitId": "c62c466e2a6cf1c075d054b22ca9c92eea3245d3",
+                "timestamp": 1741282681000,
+                "author": {
+                    "absoluteUrl": "http://localhost:8080/user/noreply",
+                    "fullName": "noreply"
+                },
+                "authorEmail": "noreply@github.com",
+                "comment": "Update Jenkinsfile\n",
+                "date": "2025-03-06 23:08:01 +0530",
+                "id": "c62c466e2a6cf1c075d054b22ca9c92eea3245d3",
+                "msg": "Update Jenkinsfile",
+                "paths": [
+                    {
+                        "editType": "edit",
+                        "file": "Jenkinsfile"
+                    }
+                ]
+            }
+        ],
+        "kind": "git"
+    }
+]
+
+"culprits": [
+            {
+                "absoluteUrl": "http://localhost:8080/user/noreply",
+                "description": null,
+                "fullName": "noreply",
+                "id": "noreply",
+                "property": []
+            }
+        ],
+        "inProgress": true,
+        "nextBuild": null,
+        "previousBuild": {
+            "actions": [
+                {
+                    "_class": "hudson.model.CauseAction",
+                    "causes": [
+                        {
+                            "_class": "hudson.model.Cause",
+                            "shortDescription": "Started by user Sanvi Verma",
+                            "userId": "sanviverma",
+                            "userName": "Sanvi Verma"
+                        }
+                    ]
+                },
+                {
+                    "_class": "jenkins.metrics.impl.TimeInQueueAction",
+                    "blockedDurationMillis": 0,
+                    "blockedTimeMillis": 0,
+                    "buildableDurationMillis": 0,
+                    "buildableTimeMillis": 0,
+                    "buildingDurationMillis": 2199,
+                    "executingTimeMillis": 2199,
+                    "executorUtilization": 1,
+                    "subTaskCount": 0,
+                    "waitingDurationMillis": 12,
+                    "waitingTimeMillis": 12
+                },
+                {},
+                {},
+                {},
+                {},
+                {},
+                {
+                    "_class": "org.jenkinsci.plugins.displayurlapi.actions.RunDisplayAction"
+                },
+                {
+                    "_class": "org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"
+                },
+                {},
+                {
+                    "_class": "org.jenkinsci.plugins.workflow.job.views.FlowGraphAction"
+                },
+                {},
+                {},
+                {},
+                {}
+            ]
